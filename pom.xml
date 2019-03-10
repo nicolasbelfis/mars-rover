@@ -17,12 +17,66 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-it-source</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>src/IT/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-it-resources</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/it-classes</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/IT/resources</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>8</source>
                     <target>8</target>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>compile-integration-test</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <configuration>
+                            <testIncludes>
+                                <include>**/*.java</include>
+                            </testIncludes>
+                            <outputDirectory>${project.build.directory}/it-classes</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -70,42 +124,25 @@
     <profiles>
         <profile>
             <id>acceptance-tests</id>
-
-            <properties>
-                <maven.test.skip>false</maven.test.skip>
-                <projectTestSourceDirectory>src/IT/java</projectTestSourceDirectory>
-            </properties>
-
             <build>
-                <testResources>
-                <testResource>
-                <directory>src/IT/java</directory>
-                <includes>
-                <include>**/*.feature</include>
-                </includes>
-                </testResource>
-                <testResource>
-                <directory>src/IT/resources</directory>
-                </testResource>
-                </testResources>
                 <plugins>
                     <plugin>
+                        <configuration>
+                            <testSourceDirectory>src/IT/java</testSourceDirectory>
+                            <testClassesDirectory>${project.build.directory}/it-classes</testClassesDirectory>
+                            <includes>
+                                <include>**/*AcceptanceTest.java</include>
+                            </includes>
+                        </configuration>
                         <!-- The failsafe plugin runs the cucumber tests at the integration-test phase -->
                         <!-- By default, it picks up tests named IT* or *IT -->
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <version>${maven-failsafe-plugin.version}</version>
-                        <configuration>
-                            <testSourceDirectory>${projectTestSourceDirectory}</testSourceDirectory>
-                            <includes>
-                                <include>**/*Test.java</include>
-                            </includes>
-                        </configuration>
                         <executions>
                             <execution>
                                 <goals>
                                     <goal>integration-test</goal>
-                                    <goal>verify</goal>
                                 </goals>
                             </execution>
                         </executions>
