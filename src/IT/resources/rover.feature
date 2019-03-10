@@ -6,5 +6,7 @@ Feature: command rover
     And I get response body <body>
 
   Examples:
-      | command | uri | code | body |
-      | Friday | /commandRover | 201 | bobo |
+      | command  | uri           | code | body |
+      | FFLFLBRB | /commandRover | 201  | {"rover position":"0,4"} |
+      | BBBB     | /commandRover | 201  | {"rover position":"3,4","obstacle position":"4,4"}|
+      | FEDD     | /commandRover | 400  | |

@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class CommandParser {
 
-  static List<Command> getCommands(String commandLine, RoverHandler roverHandler) {
+  public static List<Command> getCommands(String commandLine, RoverHandler roverHandler) {
     return Arrays.asList(commandLine.split("-")).stream()
       .map(s -> CommandParser.apply(s, roverHandler))
       .map(command -> command.orElseThrow(() -> new IllegalArgumentException("bad command format")))
