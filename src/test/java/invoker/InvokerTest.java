@@ -64,7 +64,7 @@ public class InvokerTest {
     CommandForward commandForward3 = new CommandForward(receiver);
     CommandBackward commandBackward = new CommandBackward(receiver);
     Rover actualRover = Invoker
-      .applyCommands(Arrays.asList(commandLeft,commandForward3, commandBackward), rover)
+      .applyCommands(Arrays.asList(commandLeft, commandForward3, commandBackward), rover)
       .getRover();
     Position expectedPostion = new Position(1, 2);
     Direction expectedDirection = Direction.NORTH;

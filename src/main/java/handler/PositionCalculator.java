@@ -4,7 +4,7 @@ import domain.Grid;
 import domain.Position;
 
 @FunctionalInterface
-public interface PostionCalcultor {
+public interface PositionCalculator {
 
   Position handle(Position position, Grid grid);
 }

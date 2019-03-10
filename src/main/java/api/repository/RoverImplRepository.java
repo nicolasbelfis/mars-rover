@@ -7,8 +7,6 @@ import handler.RoverHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 @Repository
 public class RoverImplRepository implements RoverRepository {
 

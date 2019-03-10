@@ -19,6 +19,7 @@ public class Application {
 
   /**
    * initiate app with a grid of 10 by 10 and 2 obstacles at 2,2 and 4,4
+   *
    * @return
    */
   @Bean

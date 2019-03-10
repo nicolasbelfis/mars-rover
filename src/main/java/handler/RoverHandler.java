@@ -28,14 +28,14 @@ public class RoverHandler {
     return this.grid;
   }
 
-  public Rover move(Rover rover, PostionCalcultor postionCalcultor) {
-    final Position newPosition = postionCalcultor.handle(rover.getPosition(), grid);
+  public Rover move(Rover rover, PositionCalculator positionCalculator) {
+    final Position newPosition = positionCalculator.handle(rover.getPosition(), grid);
     if (detectCollision(newPosition)) throw new ObstacleEncounteredException(newPosition);
     return new Rover(rover.getDirection(), newPosition, false);
   }
 
   public Rover turn(Rover rover, DirectionCalculator directionCalculator) {
-    return new Rover(directionCalculator.handle(rover.getDirection()), rover.getPosition(), false);
+    return new Rover(directionCalculator.handle(), rover.getPosition(), false);
   }
 
   public static Position moveUp(Position position, Grid grid) {

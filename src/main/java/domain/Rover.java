@@ -1,7 +1,5 @@
 package domain;
 
-import java.util.Optional;
-
 public class Rover extends PositionableObject {
 
   private final Direction direction;
