@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85fef4ad-6054-4d6f-99f1-7a0bd2b18665" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/CommandLeft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/CommandRight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/DirectionCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/invoker/InvokerResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandBackward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandBackward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandForward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/PositionableObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/PositionableObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/StrategicMover.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handler/PostionCalcultor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/PostionCalcultor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handler/RoverHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/RoverHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/invoker/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/invoker/Invoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/CommandParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parser/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/ParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,20 +18,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RoverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+            <state relative-caret-position="2190">
+              <caret line="157" column="50" lean-forward="true" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/command/CommandForward.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <folding>
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+            <state relative-caret-position="86">
+              <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -53,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/command/CommandBackward.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="240">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="e#257#258#0" expanded="true" />
                 <element signature="e#291#292#0" expanded="true" />
@@ -66,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="377">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,10 +86,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/PositionableObject.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/parser/ParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="383">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,28 +122,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/command/Command.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Rover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/handler/RoverHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            <state relative-caret-position="376">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -167,7 +162,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/service/RoverService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/command/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/RoverReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/RoverHandler.java" />
@@ -208,13 +202,14 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/Direction.java" />
         <option value="$PROJECT_DIR$/src/main/java/command/CommandRight.java" />
         <option value="$PROJECT_DIR$/src/main/java/command/CommandLeft.java" />
-        <option value="$PROJECT_DIR$/src/main/java/handler/RoverHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RoverTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/PositionableObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/invoker/InvokerResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/invoker/Invoker.java" />
-        <option value="$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Grid.java" />
+        <option value="$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/handler/RoverHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RoverTest.java" />
       </list>
     </option>
   </component>
@@ -364,7 +359,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552213800943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552218519122" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -403,7 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InvokerTest">
+  <component name="RunManager" selected="JUnit.RoverTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -426,7 +421,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvokerTest.should_lead_to_obstacle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InvokerTest.should_restart_from_new_position" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="marsRover" />
       <extension name="coverage">
         <pattern>
@@ -436,41 +431,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="invoker" />
       <option name="MAIN_CLASS_NAME" value="invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="should_lead_to_obstacle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InvokerTest.should_retrieve_new_rover_position" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marsRover" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="invoker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="invoker" />
-      <option name="MAIN_CLASS_NAME" value="invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="should_retrieve_new_rover_position" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InvokerTest.should_retrieve_obstacle_position" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="marsRover" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="invoker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="invoker" />
-      <option name="MAIN_CLASS_NAME" value="invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="should_retrieve_obstacle_position" />
+      <option name="METHOD_NAME" value="should_restart_from_new_position" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -482,6 +443,28 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RoverTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoverTest.should_loop_through_edge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marsRover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoverTest" />
+      <option name="METHOD_NAME" value="should_loop_through_edge" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoverTest.should_loop_through_edge_by_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="marsRover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoverTest" />
+      <option name="METHOD_NAME" value="should_loop_through_edge_by_0" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -546,19 +529,19 @@
     </configuration>
     <list>
       <item itemvalue="Substeps Feature.rover.feature" />
-      <item itemvalue="JUnit.RoverTest" />
       <item itemvalue="JUnit.InvokerTest" />
-      <item itemvalue="JUnit.InvokerTest.should_lead_to_obstacle" />
-      <item itemvalue="JUnit.InvokerTest.should_retrieve_obstacle_position" />
-      <item itemvalue="JUnit.InvokerTest.should_retrieve_new_rover_position" />
+      <item itemvalue="JUnit.InvokerTest.should_restart_from_new_position" />
+      <item itemvalue="JUnit.RoverTest.should_loop_through_edge" />
+      <item itemvalue="JUnit.RoverTest.should_loop_through_edge_by_0" />
+      <item itemvalue="JUnit.RoverTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InvokerTest" />
-        <item itemvalue="JUnit.InvokerTest.should_retrieve_new_rover_position" />
-        <item itemvalue="JUnit.InvokerTest.should_retrieve_obstacle_position" />
-        <item itemvalue="JUnit.InvokerTest.should_lead_to_obstacle" />
         <item itemvalue="JUnit.RoverTest" />
+        <item itemvalue="JUnit.RoverTest.should_loop_through_edge_by_0" />
+        <item itemvalue="JUnit.RoverTest.should_loop_through_edge" />
+        <item itemvalue="JUnit.InvokerTest.should_restart_from_new_position" />
+        <item itemvalue="JUnit.InvokerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -587,39 +570,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoverTest - 2019.03.09 at 23h 47m 38s.xml">
-      <configuration name="RoverTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest_should_lead_to_obstacle - 2019.03.09 at 23h 47m 49s.xml">
-      <configuration name="InvokerTest.should_lead_to_obstacle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest_should_lead_to_obstacle - 2019.03.09 at 23h 47m 52s.xml">
-      <configuration name="InvokerTest.should_lead_to_obstacle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest_should_retrieve_obstacle_position - 2019.03.09 at 23h 52m 10s.xml">
-      <configuration name="InvokerTest.should_retrieve_obstacle_position" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest_should_retrieve_new_rover_position - 2019.03.09 at 23h 53m 00s.xml">
-      <configuration name="InvokerTest.should_retrieve_new_rover_position" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest - 2019.03.09 at 23h 56m 24s.xml">
-      <configuration name="InvokerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest - 2019.03.09 at 23h 57m 18s.xml">
-      <configuration name="InvokerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest - 2019.03.10 at 11h 24m 03s.xml">
-      <configuration name="InvokerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InvokerTest - 2019.03.10 at 11h 24m 24s.xml">
-      <configuration name="InvokerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InvokerTest - 2019.03.10 at 11h 28m 36s.xml">
       <configuration name="InvokerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InvokerTest_should_restart_from_new_position - 2019.03.10 at 12h 17m 19s.xml">
+      <configuration name="InvokerTest.should_restart_from_new_position" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InvokerTest_should_restart_from_new_position - 2019.03.10 at 12h 23m 13s.xml">
+      <configuration name="InvokerTest.should_restart_from_new_position" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_should_loop_through_edge - 2019.03.10 at 12h 25m 03s.xml">
+      <configuration name="RoverTest.should_loop_through_edge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_should_loop_through_edge - 2019.03.10 at 12h 26m 06s.xml">
+      <configuration name="RoverTest.should_loop_through_edge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_should_loop_through_edge - 2019.03.10 at 12h 30m 17s.xml">
+      <configuration name="RoverTest.should_loop_through_edge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_should_loop_through_edge_by_0 - 2019.03.10 at 12h 35m 02s.xml">
+      <configuration name="RoverTest.should_loop_through_edge_by_0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_should_loop_through_edge_by_0 - 2019.03.10 at 12h 46m 04s.xml">
+      <configuration name="RoverTest.should_loop_through_edge_by_0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_should_loop_through_edge_by_0 - 2019.03.10 at 12h 47m 11s.xml">
+      <configuration name="RoverTest.should_loop_through_edge_by_0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest - 2019.03.10 at 12h 47m 35s.xml">
+      <configuration name="RoverTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23642172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -630,13 +614,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297619" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3280255" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3280255" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35881105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3280255" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3280255" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289941" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -653,11 +637,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/command/CommandBackward.java</url>
-          <line>16</line>
-          <properties />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/controller/RoverController.java</url>
           <line>27</line>
@@ -678,12 +657,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java</url>
-          <line>47</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/handler/RoverHandler.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>return new Position(position.getX(), Math.floorMod(position.getY() - 1,grid.getyMax()));</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>position.getY() - 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(position.getY() - 1) % grid.getyMax()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/stream/Collector.java">
@@ -814,27 +824,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parser/ParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/parser/CommandParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -855,13 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/command/CommandForward.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -925,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RoverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/PositionableObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -943,24 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/command/CommandBackward.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/handler/RoverHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -984,20 +945,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="86">
+          <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parser/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/invoker/InvokerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+        <state relative-caret-position="377">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/command/CommandForward.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/command/CommandBackward.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/handler/RoverHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RoverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="157" column="50" lean-forward="true" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
         </state>
       </provider>
     </entry>

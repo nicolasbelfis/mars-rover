@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 
 public class RoverTest {
 
-  RoverHandler roverHandler = new RoverHandler(null);
+  RoverHandler roverHandler = new RoverHandler(new Grid(Collections.emptyList(), 10, 10));
   CommandForward commandForward = new CommandForward(roverHandler);
   CommandBackward commandBackward = new CommandBackward(roverHandler);
   CommandLeft commandLeft = new CommandLeft(roverHandler);
@@ -141,8 +141,24 @@ public class RoverTest {
 
   @Test(expected = ObstacleEncounteredException.class)
   public void should_detect_obstacle() {
-    final Grid grid = new Grid(Collections.singletonList(new Obstacle(new Position(1, 2))));
+    final Grid grid = new Grid(Collections.singletonList(new Obstacle(new Position(1, 2))), 10, 10);
     final RoverHandler receiver = new RoverHandler(grid);
     new CommandForward(receiver).execute(new Rover(Direction.NORTH, new Position(1, 1), false));
+  }
+
+  @Test
+  public void should_loop_through_edge() {
+    final Grid grid = new Grid(Collections.emptyList(), 10, 10);
+    final RoverHandler receiver = new RoverHandler(grid);
+    final Rover rover = new CommandForward(receiver).execute(new Rover(Direction.NORTH, new Position(10, 10), false));
+    assertEquals(1, rover.getPosition().getY());
+  }
+
+  @Test
+  public void should_loop_through_edge_by_0() {
+    final Grid grid = new Grid(Collections.emptyList(), 10, 10);
+    final RoverHandler receiver = new RoverHandler(grid);
+    final Rover rover = new CommandBackward(receiver).execute(new Rover(Direction.NORTH, new Position(0, 0), false));
+    assertEquals(9, rover.getPosition().getY());
   }
 }

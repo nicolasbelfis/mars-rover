@@ -1,6 +1,8 @@
 package invoker;
 
+import command.CommandBackward;
 import command.CommandForward;
+import command.CommandLeft;
 import command.CommandRight;
 import domain.*;
 import handler.RoverHandler;
@@ -12,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 
 public class InvokerTest {
 
-  private final Grid grid = new Grid(Arrays.asList(new Obstacle(new Position(2, 2)), new Obstacle(new Position(4, 4))));
+  private final Grid grid = new Grid(Arrays.asList(new Obstacle(new Position(2, 2)), new Obstacle(new Position(4, 4))), 10, 10);
   private final RoverHandler receiver = new RoverHandler(grid);
 
   @Test()
@@ -47,5 +49,26 @@ public class InvokerTest {
 
     Position expectedPostion = new Position(1, 2);
     assertEquals(expectedPostion, actualPosition);
+  }
+
+  @Test
+  public void should_restart_from_new_position() {
+    CommandForward commandForward = new CommandForward(receiver);
+    CommandRight commandRight = new CommandRight(receiver);
+    CommandForward commandForward2 = new CommandForward(receiver);
+    final Rover rover = Invoker
+      .applyCommands(Arrays.asList(commandForward, commandRight, commandForward2), new Rover(Direction.NORTH, new Position(1, 1), false))
+      .getRover();
+
+    CommandLeft commandLeft = new CommandLeft(receiver);
+    CommandForward commandForward3 = new CommandForward(receiver);
+    CommandBackward commandBackward = new CommandBackward(receiver);
+    Rover actualRover = Invoker
+      .applyCommands(Arrays.asList(commandLeft,commandForward3, commandBackward), rover)
+      .getRover();
+    Position expectedPostion = new Position(1, 2);
+    Direction expectedDirection = Direction.NORTH;
+    assertEquals(expectedPostion, actualRover.getPosition());
+    assertEquals(expectedDirection, actualRover.getDirection());
   }
 }

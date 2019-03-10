@@ -39,19 +39,19 @@ public class RoverHandler {
   }
 
   public static Position moveUp(Position position, Grid grid) {
-    return new Position(position.getX(), position.getY() + 1);
+    return new Position(position.getX(), (position.getY() + 1) % grid.getyMax());
   }
 
   public static Position moveDown(Position position, Grid grid) {
-    return new Position(position.getX(), position.getY() - 1);
+    return new Position(position.getX(), Math.floorMod(position.getY() - 1, grid.getyMax()));
   }
 
   public static Position moveEast(Position position, Grid grid) {
-    return new Position(position.getX() + 1, position.getY());
+    return new Position((position.getX() + 1) % grid.getxMax(), position.getY());
   }
 
   public static Position moveWest(Position position, Grid grid) {
-    return new Position(position.getX() - 1, position.getY());
+    return new Position(Math.floorMod(position.getX() - 1, grid.getxMax()), position.getY());
   }
 
 }
