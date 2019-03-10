@@ -77,17 +77,17 @@
             </properties>
 
             <build>
-                <!--<testResources>-->
-                <!--<testResource>-->
-                <!--<directory>src/IT/java</directory>-->
-                <!--<includes>-->
-                <!--<include>**/*.feature</include>-->
-                <!--</includes>-->
-                <!--</testResource>-->
-                <!--<testResource>-->
-                <!--<directory>src/IT/resources</directory>-->
-                <!--</testResource>-->
-                <!--</testResources>-->
+                <testResources>
+                <testResource>
+                <directory>src/IT/java</directory>
+                <includes>
+                <include>**/*.feature</include>
+                </includes>
+                </testResource>
+                <testResource>
+                <directory>src/IT/resources</directory>
+                </testResource>
+                </testResources>
                 <plugins>
                     <plugin>
                         <!-- The failsafe plugin runs the cucumber tests at the integration-test phase -->
@@ -98,11 +98,8 @@
                         <configuration>
                             <testSourceDirectory>${projectTestSourceDirectory}</testSourceDirectory>
                             <includes>
-                                <include>**/RoverAcceptanceTest.java</include>
+                                <include>**/*Test.java</include>
                             </includes>
-                            <excludes>
-                                <exclude>**/RoverTest.java</exclude>
-                            </excludes>
                         </configuration>
                         <executions>
                             <execution>

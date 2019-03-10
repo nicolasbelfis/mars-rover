@@ -34,7 +34,24 @@ public class RoverHandler {
     return new Rover(rover.getDirection(), newPosition, false);
   }
 
-  public Rover turn(Rover rover) {
-    return null;
+  public Rover turn(Rover rover, DirectionCalculator directionCalculator) {
+    return new Rover(directionCalculator.handle(rover.getDirection()), rover.getPosition(), false);
   }
+
+  public static Position moveUp(Position position, Grid grid) {
+    return new Position(position.getX(), position.getY() + 1);
+  }
+
+  public static Position moveDown(Position position, Grid grid) {
+    return new Position(position.getX(), position.getY() - 1);
+  }
+
+  public static Position moveEast(Position position, Grid grid) {
+    return new Position(position.getX() + 1, position.getY());
+  }
+
+  public static Position moveWest(Position position, Grid grid) {
+    return new Position(position.getX() - 1, position.getY());
+  }
+
 }

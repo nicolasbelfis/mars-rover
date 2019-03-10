@@ -14,11 +14,14 @@ public class CommandBackward implements Command {
   }
 
   public Rover execute(Rover rover) {
-    if(rover.getDirection().equals(Direction.NORTH))
-      return receiver.move(rover,(position, grid) -> new Position(position.getX(),position.getY()+1));
-    if(rover.getDirection().equals(Direction.SOUTH))
-      return receiver.move(rover,(position, grid) -> new Position(position.getX(),position.getY()-1));
-
+    if (rover.getDirection().equals(Direction.SOUTH))
+      return receiver.move(rover, RoverHandler::moveUp);
+    if (rover.getDirection().equals(Direction.NORTH))
+      return receiver.move(rover, RoverHandler::moveDown);
+    if (rover.getDirection().equals(Direction.WEST))
+      return receiver.move(rover, RoverHandler::moveEast);
+    if (rover.getDirection().equals(Direction.EAST))
+      return receiver.move(rover, RoverHandler::moveWest);
     throw new IllegalStateException("");
   }
 }

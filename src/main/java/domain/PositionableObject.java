@@ -1,6 +1,6 @@
 package domain;
 
-public abstract class PositionableObject {
+public class PositionableObject {
   private final Position position;
 
   protected PositionableObject(Position position) {

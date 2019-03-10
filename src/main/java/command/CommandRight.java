@@ -1,27 +1,26 @@
 package command;
 
 import domain.Direction;
-import domain.Position;
 import domain.Rover;
 import handler.RoverHandler;
 
-public class CommandForward implements Command {
-
+public class CommandRight implements Command {
   private final RoverHandler receiver;
 
-  public CommandForward(RoverHandler receiver) {
-    this.receiver = receiver;
+  public CommandRight(RoverHandler roverHandler) {
+    this.receiver = roverHandler;
   }
 
+  @Override
   public Rover execute(Rover rover) {
     if (rover.getDirection().equals(Direction.NORTH))
-      return receiver.move(rover, RoverHandler::moveUp);
+      return receiver.turn(rover, direction -> Direction.EAST);
     if (rover.getDirection().equals(Direction.SOUTH))
-      return receiver.move(rover, RoverHandler::moveDown);
+      return receiver.turn(rover, direction -> Direction.WEST);
     if (rover.getDirection().equals(Direction.EAST))
-      return receiver.move(rover, RoverHandler::moveEast);
+      return receiver.turn(rover, direction -> Direction.SOUTH);
     if (rover.getDirection().equals(Direction.WEST))
-      return receiver.move(rover, RoverHandler::moveWest);
+      return receiver.turn(rover, direction -> Direction.NORTH);
     throw new IllegalStateException("");
   }
 }
